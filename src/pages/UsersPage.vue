@@ -53,8 +53,9 @@ export default {
 		async getUsers() {
 			this.loading = true;
 			this.error = null;
+			console.log(process.env.VUE_APP_API_URL);
 			try {
-				const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+				const response = await axios.get(`${process.env.API_URL }/users`);
 				this.users = response.data;
 			} catch (error) {
 				console.error("Error al obtener los datos:", error);

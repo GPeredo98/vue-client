@@ -43,5 +43,6 @@ module.exports = {
 			template: './src/index.html'
 		}),
 		new Dotenv()
-	]
+	],
+	devtool: 'source-map',
 };

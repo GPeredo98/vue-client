@@ -22,8 +22,10 @@
     "webpack-dev-server": "^4.15.2"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.2.0",
     "@vue/compiler-sfc": "^3.5.13",
     "autoprefixer": "^10.2.6",
+    "axios": "^1.8.3",
     "css-loader": "^3.6.0",
     "postcss": "^8.2.10",
     "postcss-loader": "^4.1.0",

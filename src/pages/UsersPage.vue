@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+	<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md mx-auto mt-4">
 		<div class="flex justify-between items-center mb-4">
 			<h2 class="text-2xl font-bold text-gray-700 text-center">Lista de Usuarios</h2>
 			<div class="flex gap-2">
@@ -21,7 +21,7 @@
 			<span class="ml-2 text-blue-500">Cargando...</span>
 		</div>
 
-		<ul v-else class="divide-y divide-gray-200 max-h-64 overflow-y-auto">
+		<ul v-else class="divide-y divide-gray-200 max-h-64 overflow-y-auto w-full">
 			<li v-for="user in users" :key="user.id"
 				class="flex items-center space-x-4 py-3 px-2 hover:bg-gray-100 rounded-md transition">
 				<div class="bg-blue-500 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold">

@@ -45,4 +45,10 @@ module.exports = {
 		new Dotenv()
 	],
 	devtool: 'source-map',
+	devServer: {
+		historyApiFallback: true,
+		static: './dist',
+		hot: true,
+		port: 8080
+	}
 };
